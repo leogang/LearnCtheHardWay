@@ -2,6 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-	fputs("Hello worlds?");
+	puts("Hello worlds?");
+	
 	return 0;
 }
