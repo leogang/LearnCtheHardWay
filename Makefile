@@ -1,8 +1,11 @@
 CFLAGS=-Wall -g
 
-all:	ex1 ex3
+all:	clean xsd
+
+xsd:	
+	xsd
 
 
 clean:
-	rm -f ex1 ex3
+	rm -f xsd
 	

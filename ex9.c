@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     char name[4] = {'a'};
 
     // first, print them out raw
-    printf("numbers: %d %d %d %d\n",
+    printf("numbers: %d %d %d\n",
             numbers[0], numbers[1],
             numbers[2], numbers[3]);
 
