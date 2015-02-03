@@ -14,7 +14,8 @@ int main(int argc, char *argv[])
     int i = 0;
 
     // first way using indexing
-    for(i = 0; i < count; i++) {
+    // print the arrays in reverse order
+    for(i = count - 1; i != -1; i--) {
         printf("%s has %d years alive.\n",
                 names[i], ages[i]);
     }
@@ -27,8 +28,8 @@ int main(int argc, char *argv[])
 
     // second way using pointers
     for(i = 0; i < count; i++) {
-        printf("%s is years old.\n",
-                **cur_name[i]);
+        printf("%s is %d years old.\n",
+                *(cur_name+i), *(cur_age+i));
     }
 
     printf("---\n");
@@ -52,6 +53,4 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-
-
 
